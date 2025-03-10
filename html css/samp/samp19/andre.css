@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    background-color: #95DCA9;
+    color: #34573c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #496A52;
+}
+
+h1#maestro {
+    text-align: center;
+    color: #618C6C;
+    background-color: #3BDB74;
+}
+
+h2 {
+    color: #496A52;
+}
+
+.viper {
+    color: red;
+    font-weight: bold;
+}
+
+.treathe {
+    color: blue;
+}
+
+.moon {
+    color: brown;
+}
+
+.destaque {
+    background-color: rgba(0, 0, 0, 0.356);
+}
