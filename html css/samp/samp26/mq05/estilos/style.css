@@ -22,7 +22,6 @@ header > h1 {
 
 span#burguer {
     background-color: rgb(54, 54, 54);
-    display: block;
     color: white;
     padding: 10px;
     cursor: pointer;
@@ -44,7 +43,6 @@ menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    text-align: center;
     background-color: rgb(87, 87, 87);
     color: white;
     border-top: 2px solid gray;
