@@ -8,8 +8,10 @@
         div.conteiner {
             background-color: lightcoral;
             display: flex;
-            
-            flex-flow: row wrap;
+            flex-wrap: row nowrap;
+            justify-content: space-around;
+            height: 300px;
+            align-items: center;
         }
 
         div.item {
@@ -17,18 +19,17 @@
             border: 1px solid black;
             text-align: center;
             padding: 10px;
-            flex: auto;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">Exemplo de Bloco A</div>
-        <div class="item">Exemplo de Bloco B</div>
-        <div class="item">Exemplo de Bloco C</div>
-        <div class="item">Exemplo de Bloco D</div>
-        <div class="item">Exemplo de Bloco F</div>
-        <div class="item">Exemplo de Bloco G</div>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
     </div>
 </body>
 </html>
