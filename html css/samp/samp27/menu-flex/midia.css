@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 537px) {
+    header {
+        flex-flow: column nowrap;
+    }
+
+    header > nav {
+        flex-flow: column nowrap;
+    }
+
+    header > h1 {
+        flex-basis: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        width: 600px;
+    }
+
+    main h2 {
+        font-size: 1.6em;
+    }
+
+    main p {
+        font-size: 1.3em;
+    }
+}
