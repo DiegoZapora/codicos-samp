@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,7 @@
         .container {
             border: 1px solid black;
             display: grid;
-            grid-template: 100px 100px 100px / auto auto auto;
-            place-items: stretch center;
-            place-content: center space-between;
+            grid-template: repeat(3, 100px) / 100px 20% repeat(2, 1fr);
         }
 
         .item {
@@ -46,6 +44,9 @@
         </div>
         <div class="item">
             I
+        </div>
+        <div class="item">
+            J
         </div>
     </div>
 </body>
