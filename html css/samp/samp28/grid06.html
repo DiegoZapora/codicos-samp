@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samp</title>
+    <style>
+        div.container {
+            display: grid;
+            max-height: 1200px;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            border: 5px solid blue;
+        }
+
+        div.caixa1 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            border: 5px solid red;
+        }
+
+        div.caixa2 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border: 5px solid red;
+        }
+
+        div.caixa3 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caixa1">
+            A
+        </div>
+        <div class="caixa1">
+            B
+        </div>
+        <div class="caixa1">
+            C
+        </div>
+        <div class="caixa1">
+            D
+        </div>
+        <div class="caixa2">
+            E
+        </div>
+        <div class="caixa2">
+            F
+        </div>
+        <div class="caixa3">
+            G
+        </div>
+        <div class="caixa3">
+            H
+        </div>
+        <div class="caixa2">
+            I
+        </div>
+        <div class="caixa2">
+            J
+        </div>
+        <div class="caixa3">
+            K
+        </div>
+        <div class="caixa3">
+            L
+        </div>
+    </div>
+</body>
+</html>
