@@ -5,67 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sas</title>
     <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
         body {
             background-color: rgba(0, 0, 255, 0.473);
+            font-family: 'Courier New', Courier, monospace;
         }
         .container {
             border: 5px solid white;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 70px 40px 200px 200px 40px;
+            grid-template-columns: 1fr 150px;
+            grid-template-rows: 100px 40px 1fr 40px;
             gap: 5px;
-            max-height: 600px;
+            height: 100vh;
+            width: 100vw;
         }
 
-        .caixa1 {
+        #caixa1 {
             grid-row: 1;
-            grid-column: 1 / 5;
+            grid-column: 1 / -1;
+        }
+
+        #caixa2 {
+            grid-row: 2;
+            grid-column: 1 / -1;
+        }
+
+        #caixa3 {
+            grid-column: 1 / -2;
+            grid-row: 3 / 4;
+        }
+
+        #caixa4 {
+            grid-row: 3 / 4;
+            grid-column: 2;
+        }
+
+        #caixa5 {
+            grid-column: 1 / -1;
+            grid-row: 4 / 5;
+        }
+
+        .caixa {
             text-align: center;
             border: 5px solid yellow;
             background-color: yellow;
             padding: 10px;
         }
-
-        .caixa2 {
-            grid-row: 2;
-            grid-column: 1 / 5;
-            text-align: center;
-            border: 5px solid yellow;
-            background-color: yellow;
-        }
-
-        .caixa3 {
-            grid-column: 1 / 4;
-            grid-row: 3 / 5;
-            border: 5px solid yellow;
-            background-color: yellow;
-            text-align: center;
-        }
-
-        .caixa4 {
-            grid-row: 3 / 5;
-            grid-column: 4;
-            border: 5px solid yellow;
-            background-color: yellow;
-            text-align: center;
-        }
-
-        .caixa5 {
-            grid-column: 1 / 5;
-            grid-row: 5;
-            border: 5px solid yellow;
-            background-color: yellow;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="caixa1">topo</div>
-        <div class="caixa2">menu</div>
-        <div class="caixa3">principal</div>
-        <div class="caixa4">secundario</div>
-        <div class="caixa5">rodape</div>
+        <header id="caixa1" class="caixa">
+            Topo
+        </header>
+        <nav id="caixa2" class="caixa">
+            Menu
+        </nav>
+        <main id="caixa3" class="caixa">
+            Principal
+        </main>
+        <aside id="caixa4" class="caixa">
+            Secundario
+        </aside>
+        <footer id="caixa5" class="caixa">
+            Rodape
+        </footer>
     </div>
 </body>
 </html>
